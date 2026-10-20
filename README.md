@@ -1,5 +1,7 @@
 # Presupuesta mi web
 
+**🌐 Demo en vivo: [https://presupuesto-web-web.vercel.app/](https://presupuesto-web-web.vercel.app/)**
+
 API REST hecha con **Node.js + Express + JavaScript** que calcula el presupuesto de un proyecto web. El servidor valida los datos recibidos y calcula el precio **siempre con sus propias tarifas**: nunca acepta un precio o un total enviado por el cliente.
 
 Como ampliación, incluye una interfaz web (Next.js + shadcn/ui) para pedir presupuestos desde el navegador.
