@@ -3,6 +3,7 @@ node_modules/
 
 # credenciales y variables de entorno
 .env*
+!.env.example
 
 # varios
 .DS_Store

@@ -1,4 +1,5 @@
 import { PresupuestoForm } from "@/components/presupuesto-form"
+import { SolicitudForm } from "@/components/solicitud-form"
 
 export default function Page() {
   return (
@@ -18,12 +19,22 @@ export default function Page() {
           </span>
         </h1>
         <p className="max-w-xl text-muted-foreground">
-          Elige qué web necesitas y obtén un presupuesto desglosado. El precio lo
-          calcula nuestro servidor con sus propias tarifas.
+          Cuéntanos qué necesitas o configura tu web a mano y obtén un
+          presupuesto desglosado. El precio lo calcula nuestro servidor con sus
+          propias tarifas.
         </p>
       </header>
 
-      <PresupuestoForm />
+      <div className="max-w-3xl">
+        <SolicitudForm />
+      </div>
+
+      <section className="flex flex-col gap-4">
+        <h2 className="text-xl font-semibold tracking-tight">
+          ¿Prefieres configurarla tú?
+        </h2>
+        <PresupuestoForm />
+      </section>
 
       <footer className="mt-auto pt-8 text-xs text-muted-foreground">
         API: Node.js + Express · Interfaz: Next.js + shadcn/ui · Pulsa{" "}

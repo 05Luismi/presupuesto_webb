@@ -13,10 +13,13 @@
     "start": "concurrently -n api,web -c cyan,magenta \"node server/index.js\" \"npm --prefix web run dev\"",
     "api": "node server/index.js",
     "dev": "concurrently -n api,web -c cyan,magenta \"node --watch server/index.js\" \"npm --prefix web run dev\"",
-    "test": "node --test"
+    "test": "node --test",
+    "probar:ia": "node scripts/probar-ia.js"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "openai": "^7.53.0",
+    "pdfkit": "^0.20.2"
   },
   "devDependencies": {
     "concurrently": "^9.2.0"
